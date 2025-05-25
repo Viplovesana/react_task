@@ -9,7 +9,7 @@ const Todoslice=createSlice({
     },
     reducers:{
         addtask:(state,action)=>{
-            state.task=action.payload
+            state.task.push(action.payload);
 
         }
     }
