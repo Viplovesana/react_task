@@ -2,10 +2,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import countreducer from "./counterSlice"
 import colorreducer from "./colorSlice"
+import todoreducer from "./todoSlice"
 const Store=configureStore({
   reducer:{
     count:countreducer,
-    themechange:colorreducer
+    themechange:colorreducer,
+    todo:todoreducer
 
   }
 });
